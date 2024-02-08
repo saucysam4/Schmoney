@@ -1,19 +1,19 @@
-// ex 1
+// // ex 1
 
-function infoAboutMe() {
-    console.log("Name: Sam Levin");
-    console.log("Description: I am an 18 year old studing code in Israel");
-}
+// function infoAboutMe() {
+//     console.log("Name: Sam Levin");
+//     console.log("Description: I am an 18 year old studing code in Israel");
+// }
 
-infoAboutMe();
+// infoAboutMe();
 
-// pt 2
-function infoAboutPerson(personName, personAge, personFavoriteColor) {
-    console.log(personName + " is " +personAge+ " and their favorite color is " +personFavoriteColor)
-}
+// // pt 2
+// function infoAboutPerson(personName, personAge, personFavoriteColor) {
+//     console.log(personName + " is " +personAge+ " and their favorite color is " +personFavoriteColor)
+// }
 
-infoAboutPerson("David", 45, "blue");
-infoAboutPerson("Josh", 12, "yellow");
+// infoAboutPerson("David", 45, "blue");
+// infoAboutPerson("Josh", 12, "yellow");
 
 // ex 2
 
@@ -41,5 +41,48 @@ infoAboutPerson("Josh", 12, "yellow");
 // calculateTip();
 
 // ex 3
+
+
+// function isDivisible() {
+//     var sumDivisibleBy23 = 0; 
+
+//     for (var i = 0; i <= 500; i++) {
+//         if (i % 23 === 0) {
+//             console.log(i + " is divisible by 23");
+//             sumDivisibleBy23 += i; 
+//         }
+//     }
+
+//     console.log("The sum of numbers divisible by 23 is: " + sumDivisibleBy23);
+// }
+
+// isDivisible();
+
+
+// Daily Challenge
+
+var wordsInput = prompt("Please enter several words separated by commas:");
+var wordsArray = wordsInput.split(',');
+
+wordsArray = wordsArray.map(function(word) {
+    return word.trim();
+});
+
+var maxLength = 0;
+wordsArray.forEach(function(word) {
+    if (word.length > maxLength) {
+        maxLength = word.length;
+    }
+});
+
+console.log("*".repeat(maxLength + 4));
+
+wordsArray.forEach(function(word) {
+    var frame = "* " + word + " ".repeat(maxLength - word.length) + " *";
+    console.log(frame);
+});
+
+console.log("*".repeat(maxLength + 4));
+
 
 
