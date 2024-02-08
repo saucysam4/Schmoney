@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- You can create a separate CSS file for styling -->
+    <style>
+        /* Add any additional inline styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #ce0fec;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        nav {
+            text-align: center;
+            margin-bottom: 2px;
+        }
+        nav a {
+            color: #f3f3f3;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #1732df;
+            color: #fff;
+        }
+        .portfolio-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+        .portfolio-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="about me">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quia, vel, nam dolorem aperiam reprehenderit velit, in doloremque eveniet voluptatibus ea? Illo aliquam rem nam, dolorum sed laudantium ex unde!</p>
+        <h2>Portfolio</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <h3>Project 1</h3>
+                <p></p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="portfolio-item">
+                <h3>Project 2</h3>
+                <p></p>
+                <a href="#">View Project</a>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+    <img src="" class="img-fluid" alt="">
+
+    <footer>
+        <div class="contact-form">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <input type="text">
+            <button>send</button>
+
+
+        </div>
+    </footer>
+
+</body>
+</html>
