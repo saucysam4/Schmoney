@@ -64,10 +64,6 @@
 var wordsInput = prompt("Please enter several words separated by commas:");
 var wordsArray = wordsInput.split(',');
 
-wordsArray = wordsArray.map(function(word) {
-    return word.trim();
-});
-
 var maxLength = 0;
 wordsArray.forEach(function(word) {
     if (word.length > maxLength) {
